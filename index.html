@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="js/owl.carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="js/owl.carousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>大粤网首页</title>
+    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<!--[if lte IE 8]>
+<p class="browser-update">您的浏览器的版本太低了，请到<a href="http://browsehappy.com/">这里</a>更新浏览器</p>
+<![endif]-->
+<header>
+    <div class="top">
+        <nav class="clearfix center-block">
+            <ul>
+                <li><a href="#">设为首页</a></li>
+                <li><a href="#">大粤手机版</a></li>
+                <li><a href="#">关于大粤</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li>
+                    <select onchange="self.location.href=options[selectedIndex].value">
+                        <option value="#">切换城市</option>
+                        <option value="#" style="cursor: pointer">重庆</option>
+                        <option value="#">四川</option>
+                        <option value="#">陕西</option>
+                        <option value="#">湖北</option>
+                        <option value="#">福建</option>
+                        <option value="#">河南</option>
+                        <option value="#">湖南</option>
+                        <option value="#">上海</option>
+                        <option value="#">浙江</option>
+                        <option value="#">辽宁</option>
+                        <option value="#">江苏</option>
+                    </select>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button>一键登录</button>
+                </li>
+                <li><a href="#" class="microblog"></a></li>
+                <li><a href="#" class="qzone"></a></li>
+                <li><a href="#" class="qmail"></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <nav class="clearfix center-block">
+            <!--这里的浮动元素.search在nav中的位置会影响布局，如果写在最后的话，.search会换行，这是因为.clearfix在nav中创建的after元素是在最后一个非浮动元素的后面。-->
+            <div class="search">
+                <input type="text" value="请输入关键词">
+                <a href="#"><span></span><span></span></a>
+            </div>
+            <a href="#" class="logo"><img src="img/2015gd-logo.jpg" alt="大粤网标志图"></a>
+            <ul>
+                <li>
+                    <select>
+                        <option value="12"><a href="#">广东</a></option>
+                        <option value="13"><a href="#">深圳</a></option>
+                        <option value="14"><a href="#">澳门</a></option>
+                        <option value="15"><a href="#">香港</a></option>
+                    </select>
+                </li>
+                <li>媒探</li>
+                <li>商城</li>
+                <li>最生活</li>
+                <li>女神风尚</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="bottom">
+        <nav class="clearfix center-block">
+            <ul>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">娱乐</a></li>
+                <li><a href="#">运动</a></li>
+                <br>
+                <li><a href="#">社区</a></li>
+                <li><a href="#">车说</a></li>
+                <li><a href="#">政务</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">房产</a></li>
+                <li><a href="#">家居</a></li>
+                <li><a href="#">数码</a></li>
+                <br>
+                <li><a href="#">汽车</a></li>
+                <li><a href="#">财经</a></li>
+                <li><a href="#">健康</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">时尚</a></li>
+                <li><a href="#">旅游</a></li>
+                <li><a href="#">教育</a></li>
+                <br>
+                <li><a href="#">美食</a></li>
+                <li><a href="#">公益</a></li>
+                <li><a href="#">婚嫁</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">亲子</a></li>
+                <li><a href="#">交友</a></li>
+                <br>
+                <li><a href="#">艺术</a></li>
+                <li><a href="#">拍客</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">香港</a></li>
+                <li><a href="#">广东禁毒</a></li>
+                <br>
+                <li><a href="#">澳门</a></li>
+                <li><a href="#">最姐直播</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">一兜糖</a></li>
+                <li><a href="#">悦房团</a></li>
+                <br>
+                <li><a href="#">快爆料</a></li>
+                <li><a href="#">广东创+</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<div class="container center-block">
+    <section class="ad"></section>
+    <section class="human">
+        <div class="item">
+            <a href="#">
+                <img src="img/ip_zuijie.png" alt="最姐头像">
+                <p><span>最姐</span>探访棠下村，年轻人在广州的第一个“家”</p>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="img/ip_dayuejun.png" alt="大粤君头像">
+                <p><span>大粤君</span>这部没有摄影师的电影，3个问题问哭无数人</p>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="img/ip_bamei.png" alt="八妹头像">
+                <p><span>八妹</span>杨幂削骨的关键证据被我们找到了！</p>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="img/139141870.png" alt="敢姐头像">
+                <p><span>敢姐</span>试过100个人一起吃霸王火锅吗！还没报名？</p>
+            </a>
+        </div>
+    </section>
+    <section class="main">
+        <div class="top">
+            <div class="day-news">
+                <h2><a href="#">每日要闻</a></h2>
+                <div>
+                    <h3><a href="#">今晨广东多地突发特大暴雨 水淹增城（图）</a></h3>
+                    <p>花都、黄埔、增城等地出现了局地特大暴雨（超250毫米）</p>
+                </div>
+                <div>
+                    <h3><a href="#">中国10大富豪7个在广东4个在深圳</a></h3>
+                    <p>单就内地富豪来看，前十大富豪中，有七个居住地或创业在广东。</p>
+                </div>
+
+            </div>
+            <aside class="best-life">
+                <img src="img/mini_logo.png" alt="最生活标志图" class="center-block">
+                <button  class="center-block">免注册一键登录</button>
+                <div class="notice">
+                    <img src="img/zhanzhuai_laba.png" alt="喇叭">
+                    <span class="notice-text"><a href="#">送腾讯定制齐天大圣版限量公仔</a></span>
+                    <span class="notice-text hidden"><a href="#">玩幸运大转盘免费赢取iPhone7</a></span>
+                    <span class="notice-text hidden"><a href="#">2017中国大学生时装周震撼来袭</a></span>
+                </div>
+            </aside>
+        </div>
+        <div class="content">
+            <div class="item">
+                <div class="owl-carousel owl-theme">
+                    <div><img src="img/ninja149396854381067.jpg" alt="珠江边"></div>
+                    <div><img src="img/ninja149396431491078.jpg " alt="法拉利"></div>
+                    <div><img src="img/ninja149396448463564.jpg" alt="暴雨" ></div>
+                    <div><img src="img/ninja149398044461680.jpg" alt="航拍"></div>
+                    <div><img src="img/ninja149397053263241.jpg" alt="楼市"></div>
+                </div>
+            </div>
+            <div class="item">
+                <a href="#">捡了手机占为己有 居然还问失主要钱</a><br/>
+                <a href="#">我们的纪念日 你却独自去偷欢！</a><br/>
+                <a href="#">母亲节干嘛去？来一次性满足辣妈们多个愿望！</a><br/>
+                <a href="#">我的天！淘宝卖家竟威胁让我删掉差评</a><br/>
+                <a href="#">前车向窗外扔垃圾差点害死我！！</a><br/>
+                <a href="#">主持一姐曾和男同学打架 内衣被扯扔下楼</a><br/>
+                <a href="#">演员刘朔酒驾后车祸身亡 其妻将生产</a><br/>
+            </div>
+            <div class="item form-one">
+                <h2><a href="#">广东发布</a><span><a href="#">更多>></a></span></h2>
+                <img src="img/143507318.jpg" alt="东莞金融局及世莞合会赴昭通调研">
+                <div>
+                    <h3><a href="#">东莞金融局及世莞合会赴昭通调研</a></h3>
+                    <p>助推昭通打赢脱贫攻坚战，实现互惠共赢</p>
+                </div>
+                <a href="#">200位导师4亿信贷资金 第二届羊城科创杯大赛启动</a>
+                <a href="#">快参加！广东“众创杯”创业创新大赛火热报名中</a>
+            </div>
+            <div class="item form-one">
+                <h2><a href="#">有深度</a><span><a href="#">更多>></a></span></h2>
+                <img src="img/ninja149403864528340.jpg" alt="一群男女蒙眼吃咪咪">
+                <div>
+                    <h3><a href="#">做完这个测试的人，都去医院看舌头了 </a></h3>
+                    <p>一群男女蒙眼吃咪咪，有人竟然吃出薯片味？</p>
+                </div>
+                <a href="#">视频</a>
+                <a href="#">《王者荣耀》经典台词粤语版 你绝对没听过</a><br/>
+                <a href="#">酸爽实验室</a>
+                <a href="#">直男眼中的大浓妆只是化了口红吗？</a>
+            </div>
+            <div class="item form-two">
+                <h2><a href="#">揾着数</a><a href="#">最爱家</a><span><a href="#">更多>></a></span></h2>
+                <div class="tab">
+                    <h3><a href="#">一线城市房贷利率上浮收缩</a></h3>
+                    <a href="#">楼市调控冲击“淡旺季”论</a>
+                    <a href="#">福克斯/思域等降2.5万</a><br/>
+                    <a href="#">如何申请住房公积金贷款</a>
+                    <a href="#">致炫/POLO等降1.2万元</a><br/>
+                    <a href="#">房产证未失效 换证不是必须</a>
+                    <a href="#">迈腾/天籁等降4.4万</a><br/>
+                    <a href="#">70㎡老房硬装12万贵吗？</a>
+                    <a href="#">我用爱建造的温馨小窝</a>
+                </div>
+                <div class="tab">
+                    <h3><a href="#">30家上市公司人均薪酬超50万</a></h3>
+                    <a href="#">70㎡的老房只硬装网上报价12万 贵吗？</a>
+                    <a href="#">都说听他话的人都发财了 你信吗？</a>
+                    <a href="#">一家4口参加我的婚宴居然只包200礼金！</a>
+                    <a href="#">被小米售后气死了 买手机2个月修了5次！</a>
+                </div>
+            </div>
+            <div class="item form-one">
+                <h2>政务聚焦<span><a href="#">更多>></a></span></h2>
+                <img src="img/143448055.jpg" alt="斗门乡村音乐节">
+                <div>
+                    <h3><a href="#">广东首个乡村音乐节月底斗门开唱</a></h3>
+                    <p>4月29-30日，斗门十里莲江景区等你来。</p>
+                </div>
+                <a href="#">51条龙舟齐竞渡 下周六激战斗门龙舟邀请赛</a><br/>
+                <a href="#">东莞是座怎样的城</a>
+                <a href="#">妇女儿童之家关注广州家庭网</a>
+            </div>
+            <div class="item form-one">
+                <h2><a href="#">有温度</a><span><a href="#">更多>></a></span></h2>
+                <img src="img/143545341.png" alt="格斗教练挑战众人">
+                <div>
+                    <h3><a href="#">太极咏春是谎言？格斗教练扬言要打假</a></h3>
+                    <p>武林几大门派“约战”徐晓冬，现实版围攻光明顶。</p>
+                </div>
+                <a href="#">活动</a>
+                <a href="#">家需要用心经营，否则就只是单纯的房子</a>
+                <a href="#">共鸣</a>
+                <a href="#">独臂快递哥深圳娶妻生子 曾被劝去乞讨</a>
+            </div>
+            <div class="item form-two">
+                <h2><a href="#">粤生活</a><a href="#">媒探</a><span><a href="#">更多>></a></span></h2>
+                <div class="tab">
+                    <h3><a href="#">广州往返深佛珠最低35元</a></h3>
+                    <a href="#">清远景致多又美，总有你想要的旅程</a><br/>
+                    <a href="#">想在珠江新城吃鱼 一定别错过这几家店</a><br/>
+                    <a href="#">必胜客汉堡王超值优惠劵，手机出示即可用</a><br/>
+                    <a href="#">广深推出“电子驾驶证” 有驾照可点击领取</a><br/>
+                </div>
+                <div class="tab">
+                    <h3><a href="#">这份全球旅行攻略请收好</a></h3>
+                    <a href="#">红糖白巧克力核桃包，8分钟早餐轻松做</a>
+                    <a href="#">真的别再炒丝了，土豆这么做才叫绝！</a>
+                    <a href="#">普宁惊现一名采花大爷，网友都惊呆了！</a>
+                    <a href="#">公众号角逐时代，告诉你怎么才能出彩</a>
+                </div>
+            </div>
+            <div class="item ad"></div>
+            <div class="item form-three">
+                <h2><a href="#">粤优惠</a><span><a href="#">更多>></a></span></h2>
+                <div>
+                    <img src="img/143511572.png" alt="齐天大圣限量公仔">
+                    <p>免费竞拍齐天大圣限量公仔</p>
+                    <p><i>￥0</i> <em>￥168</em></p>
+                </div>
+                <div>
+                    <img src="img/143344272.jpg" alt="枸杞">
+                    <p>特级宁夏中宁枸杞 150g包邮</p>
+                    <p><i>￥36</i> <em>￥40</em></p>
+                </div>
+                <div>
+                    <img src="img/143344291.jpg" alt="iPhone7">
+                    <p>幸运大转盘免费赢取iPhone7 </p>
+                    <p><i>￥0</i> <em>￥6800</em></p>
+                </div>
+            </div>
+            <div class="item form-three">
+                <h2><a href="#">会员活动</a><span><a href="#">更多>></a></span></h2>
+                <div class="picture-text">
+                    <img src="img/ninja149398631213539.png" alt="辣妈驾到">
+                    <p><a href="#">辣妈驾到大众评审团招募 报名送礼</a></p>
+                    <p>母亲节辣妈亲子活动，参与就有礼品拿喔！</p>
+                </div>
+                <div class="picture-text">
+                    <img src="img/143487217.jpg" alt="甜蜜约会照">
+                    <p><a href="#">晒五一甜蜜约会照，参与有奖哦！</a></p>
+                    <p>参与发图就能获奖！你还等什么啊！</p>
+                </div>
+                <div class="picture-text">
+                    <img src="img/ninja149380199299361.jpg" alt="育儿心得">
+                    <p><a href="#">一起来说说带娃那些事 说了有奖</a></p>
+                    <p>分享育儿心得，送给宝宝也送给自己！</p>
+                </div>
+            </div>
+            <div class="item ad"></div>
+        </div>
+    </section>
+</div>
+<footer>
+    <section class="link">
+        <ul>
+            <li><a href="#">关于腾讯</a></li>
+            <li><a href="#">关于腾讯·大粤网</a></li>
+            <li><a href="#">服务条款</a></li>
+            <li><a href="#">开放平台</a></li>
+            <li><a href="#">广告服务</a></li>
+            <li><a href="#">商务洽谈</a></li>
+            <li><a href="#">腾讯·大粤网招聘</a></li>
+            <li><a href="#">腾讯招聘</a></li>
+            <li><a href="#">腾讯公益</a></li>
+            <li><a href="#">网站导航</a></li>
+            <li><a href="#">版权所有</a></li>
+            <li><a href="#">转载须知</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">有害短信息举报</a></li>
+            <li><a href="#">阳光·绿色网络工程</a></li>
+            <li><a href="#">版权保护投诉指引</a></li>
+            <li><a href="#">广东省通管局</a></li>
+            <li><a href="#">新闻信息服务许可证</a></li>
+            <li><a href="#">互联网出版许可证</a></li>
+        </ul>
+        <ul class="not-border">
+            <li><a href="#">粤府新函[2001]87号</a></li>
+            <li><a href="#">文网文[2008]084号</a></li>
+            <li><a href="#">网络视听许可证1904073号</a></li>
+            <li>增值电信业务经营许可证：<a href="#">粤B2-20090059</a><a href="#">B2-20090028</a></li>
+        </ul>
+        <p>Copyright © 1998 - 2017 Tencent. All Rights Reserved</p>
+    </section>
+    <section class="icons">
+        <div class="item"><img src="img/816587.gif" alt="深圳网络警察报警平台"><a href="#">深圳网络警察报警平台</a></div>
+        <div class="item"><img src="img/6743671.jpg" alt="公共信息安全网络监察"><a href="#">公共信息安全网络监察</a></div>
+        <div class="item"><img src="img/ind36.gif" alt="经营性网站备案信息"><a href="#">经营性网站备案信息</a></div>
+        <div class="item"><img src="img/home_b.gif" alt="不良信息举报中心"><a href="#">不良信息举报中心</a></div>
+        <div class="item"><img src="img/wmlogo.gif" alt="中国文明网传播文明"><a href="#">中国文明网传播文明</a></div>
+    </section>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/owl.carousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

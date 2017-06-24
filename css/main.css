@@ -1,0 +1,406 @@
+/* ************
+    页面样式
+   ************
+ */
+/* ============
+    基本默认值
+   ============
+ */
+html{
+    font-size:62.5%;
+    color:#555;
+}
+body{
+    font-size:1.2rem;
+    line-height:1.5;
+}
+a{
+    text-decoration: none;
+    color:#555;
+}
+a:hover{
+    color:rgb(254,153,60);
+}
+ul{
+    margin:0;
+    padding:0;
+}
+li{
+    list-style:none;
+    display:inline-block;
+}
+h1>a,h2>a,h3>a{
+    color:#333;
+}
+
+/* ============
+    工具样式
+   ============
+ */
+.center-block{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.clearfix:before,
+.clearfix:after{
+    content:" ";
+    display:table;
+}
+.clearfix:after{
+    clear:both;
+}
+.vertical-bottom{
+    display: inline-block;
+    vertical-align: bottom;
+}
+.item{
+    display:inline-block;
+    vertical-align: bottom;
+}
+.hidden{
+    display: none;
+}
+/* ============
+    browser-update
+   ============
+ */
+.browser-update{
+    margin:0;
+    padding:1rem;
+    background: #ccc;
+}
+/* ============
+    header
+   ============
+ */
+/*header .top*/
+header .top{
+    background-color:#232323;
+}
+header .top nav{
+    width:75%;
+    min-width:1055px;
+}
+header .top nav ul:first-child{
+    float:left;
+}
+header .top nav ul:last-child{
+    text-align:right;
+}
+header .top nav ul:first-child li{
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+header .top nav ul:last-child li{
+    margin-top:1rem;
+    margin-bottom:1rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+header .top nav ul:first-child li{
+    border-right:1px solid #bdbdbd;
+}
+header .top nav ul li a{
+    color:#bdbdbd;
+}
+header .top nav ul select{
+    background-color: #232323;
+    color:#bdbdbd;
+}
+header .top nav ul select option{
+    background-color: #232323;
+    color:#bdbdbd;
+    cursor: pointer;
+}
+header .top nav ul:last-child a{
+    background-image: url(../img/mini_nav_icon.png);
+    background-repeat: no-repeat;
+}
+a.microblog{
+    width: 30px;
+    height: 22px;
+    display: inline-block;
+    background-position: center 1px;
+}
+a.qzone{
+    width: 30px;
+    height: 22px;
+    display: inline-block;
+    background-position: center -22px;
+}
+a.qmail{
+    width: 30px;
+    height: 22px;
+    display: inline-block;
+    background-position: center -44px;
+}
+/*header .main*/
+header .main{
+    padding:3rem 0 1rem 0;
+    border-bottom: #fe7a01 solid 2px;
+}
+header .main nav{
+    width:75%;
+    min-width:1055px;
+}
+header .main nav ul{
+    display:inline-block;
+    padding-left:1rem;
+}
+header .main nav .search{
+    float:right;
+}
+/*header .bottom*/
+header .bottom nav{
+    width:75%;
+    min-width:1055px;
+    padding:1.5rem;
+    border-bottom: 1px solid #eaeaea;
+}
+header .bottom nav ul{
+    float:left;
+    padding-right:1rem;
+    padding-left:1rem;
+}
+header .bottom nav ul+ul{
+    border-left:1px solid #eaeaea;
+}
+header .bottom nav ul li{
+    margin:1rem;
+}
+/* ============
+    .container
+   ============
+ */
+.container{
+    width:75%;
+    min-width:1055px;
+}
+
+/* ============
+    .container .human
+   ============
+ */
+.container .human{
+    font-size:0;
+    /*这里的font-size主要是为了消除.item之间空白所导致的间距，若无，则会使得最后一个.item流下去*/
+    padding:1rem;
+    border-bottom:1px solid #dfdfdf;
+}
+.container .human .item{
+    font-size:1.2rem;
+    width:25%;
+}
+.container .human .item img{
+    display: inline-block;
+    vertical-align: top;
+}
+.container .human .item p{
+    display:inline-block;
+    vertical-align: top;
+    margin:0;
+    width:calc(100% - 70px);
+    height:4.5rem;
+    overflow: hidden;
+}
+.container .human .item p span{
+    padding:0rem 1rem;
+    display:block;
+    color:#f67900;
+    border-left:#f67900 2px solid;
+}
+/* ============
+    .container .top
+   ============
+ */
+.container .top{
+    font-size:0;
+}
+.container .top .day-news{
+    display:inline-block;
+    box-sizing: border-box;
+    padding-right:2rem;
+    width:calc(66.7% + 1.33rem);
+    vertical-align: bottom;
+}
+.container .top aside{
+    display:inline-block;
+    box-sizing: border-box;
+    width:calc(33.3% - 1.33rem);
+    height:20rem;
+    border:1px solid #dfdfdf;
+    padding-top: 3rem;
+    vertical-align: bottom;
+}
+.container .top .day-news h2{
+    padding-left:1rem;
+    border-left:2px solid #f67900;
+    font-size:2rem;
+    font-weight:normal;
+    border-bottom:1px solid #dfdfdf;
+}
+.container .top .day-news div{
+    font-size:1.5rem;
+    border-bottom:1px solid #dfdfdf;
+}
+.container .top .day-news div h3 a{
+    font-size:2.5rem;
+    font-weight:normal;
+}
+.container .top aside{
+    font-size:1.5rem;
+}
+.container .top aside>img{
+    padding-bottom:2rem;
+}
+.container .top aside .notice{
+    text-align: center;
+}
+.container .top aside .notice img{
+    padding-left:3rem;
+    margin-right:-3rem;
+    margin-top:-1rem;
+    display:block;
+    float:left;
+}
+.container .top aside .notice .notice-text{
+    margin-top:2rem;
+}
+/* ============
+    .container .content
+   ============
+ */
+.container .content{
+    font-size:0;
+    padding-top:2rem;
+}
+.container .content .item{
+    font-size:1.4rem;
+    line-height: 2.3;
+    box-sizing: border-box;
+    width:calc(33.3% - 1.33rem);
+    height:20rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.container .content .item:nth-child(3n-1){
+    margin-left:2rem;
+    margin-right:2rem;
+}
+.container .content .item h2{
+    margin:0;
+    padding-left: 1rem;
+    border-left: 2px solid #f67900;
+    font-size: 2rem;
+    line-height:1.5;
+    font-weight: normal;
+    border-bottom: 1px solid #dfdfdf;
+}
+.container .content .item h2 span{
+    padding-top:1rem;
+    font-size:1rem;
+    float:right;
+}
+.container .content .item h3{
+    padding-top:2rem;
+    font-weight: normal;
+    line-height:1.5rem;
+    margin:0;
+}
+.container .content .form-one img{
+    float: left;
+    padding:2rem 1rem 1rem 0rem;
+}
+.container .content .form-two h2{
+    padding-left:0;
+    border-left:none;
+}
+.container .content .form-two h2>a{
+    display: inline-block;
+    margin-bottom:-2px;
+}
+.container .content .form-two h2>a:first-child{
+    border-bottom:2px solid #f67900;
+}
+.container .content .form-two h2>a:first-child{
+    margin-right:3rem;
+}
+.container .content .form-one p{
+    margin:1rem;
+    line-height:1.6;
+}
+.container .content .form-two h3 {
+    font-size:2.2rem;
+    padding:2rem 0;
+}
+
+.container .content .form-three img{
+    float: left;
+    padding-top:1rem;
+    padding-right:1rem;
+}
+.container .content .form-three p{
+    margin:0;
+}
+.container .content .form-three div{
+    box-sizing: border-box;
+}
+.container .content .form-three div+div{
+    border-top:1px #dfdfdf solid;
+}
+.container .content .form-three div h2{
+    margin:0;
+}
+.container .content .form-three div em{
+    text-decoration: line-through;
+}
+.container .content .form-three div i{
+    color: #f67900;
+}
+/* ============
+    footer
+   ============
+ */
+footer{
+    min-width:1055px;
+}
+footer .link ul{
+    display:block;
+    text-align: center;
+}
+footer .link ul:not(.not-border) li+li{
+    border-left:1px solid #dfdfdf;
+}
+footer .link ul:not(.not-border) li{
+    padding:0rem 0.5rem;
+    margin-bottom:0.5rem;
+}
+footer .link p{
+    text-align: center;
+}
+footer .icons{
+    margin:3rem auto;
+    width:60%;
+}
+footer .icons .item{
+    display:inline-block;
+    width:calc(20% - 0.8rem - 2px);
+    border:1px solid #dfdfdf;
+}
+footer .icons .item+item{
+    margin-left:1rem;
+}
+footer .icons .item img{
+    float: left;
+    width:44px;
+    height:44px;
+}
+footer .icons .item a{
+    float:right;
+    width:calc(100% - 50px);
+    height:3rem;
+    overflow:hidden;
+}
