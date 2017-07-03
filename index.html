@@ -14,8 +14,7 @@
 <body>
 <!--[if lte IE 8]>
 <p class="browser-update">您的浏览器的版本太低了，请到<a href="http://browsehappy.com/">这里</a>更新浏览器</p>
-<![endif]-->
-<header>
+<![endif]--><header>
     <div class="top">
         <nav class="clearfix center-block">
             <ul>
@@ -55,7 +54,10 @@
             <!--这里的浮动元素.search在nav中的位置会影响布局，如果写在最后的话，.search会换行，这是因为.clearfix在nav中创建的after元素是在最后一个非浮动元素的后面。-->
             <div class="search">
                 <input type="text" value="请输入关键词">
-                <a href="#"><span></span><span></span></a>
+                <div>
+                    <a href="#"><span></span></a>
+                    <a href="#"><span></span></a>
+                </div>
             </div>
             <a href="#" class="logo"><img src="img/2015gd-logo.jpg" alt="大粤网标志图"></a>
             <ul>
@@ -156,7 +158,7 @@
         </div>
     </section>
     <section class="main">
-        <div class="top">
+        <div class="content">
             <div class="day-news">
                 <h2><a href="#">每日要闻</a></h2>
                 <div>
@@ -179,8 +181,6 @@
                     <span class="notice-text hidden"><a href="#">2017中国大学生时装周震撼来袭</a></span>
                 </div>
             </aside>
-        </div>
-        <div class="content">
             <div class="item">
                 <div class="owl-carousel owl-theme">
                     <div><img src="img/ninja149396854381067.jpg" alt="珠江边"></div>
@@ -206,7 +206,7 @@
                     <h3><a href="#">东莞金融局及世莞合会赴昭通调研</a></h3>
                     <p>助推昭通打赢脱贫攻坚战，实现互惠共赢</p>
                 </div>
-                <a href="#">200位导师4亿信贷资金 第二届羊城科创杯大赛启动</a>
+                <a href="#">200导师4亿信贷资金 第二届羊城科创杯大赛启动</a><br>
                 <a href="#">快参加！广东“众创杯”创业创新大赛火热报名中</a>
             </div>
             <div class="item form-one">
@@ -236,9 +236,9 @@
                 </div>
                 <div class="tab">
                     <h3><a href="#">30家上市公司人均薪酬超50万</a></h3>
-                    <a href="#">70㎡的老房只硬装网上报价12万 贵吗？</a>
-                    <a href="#">都说听他话的人都发财了 你信吗？</a>
-                    <a href="#">一家4口参加我的婚宴居然只包200礼金！</a>
+                    <a href="#">70㎡的老房只硬装网上报价12万 贵吗？</a><br>
+                    <a href="#">都说听他话的人都发财了 你信吗？</a><br>
+                    <a href="#">一家4口参加我的婚宴居然只包200礼金！</a><br>
                     <a href="#">被小米售后气死了 买手机2个月修了5次！</a>
                 </div>
             </div>
@@ -261,7 +261,7 @@
                     <p>武林几大门派“约战”徐晓冬，现实版围攻光明顶。</p>
                 </div>
                 <a href="#">活动</a>
-                <a href="#">家需要用心经营，否则就只是单纯的房子</a>
+                <a href="#">家需要用心经营，否则就只是单纯的房子</a><br>
                 <a href="#">共鸣</a>
                 <a href="#">独臂快递哥深圳娶妻生子 曾被劝去乞讨</a>
             </div>
@@ -276,13 +276,12 @@
                 </div>
                 <div class="tab">
                     <h3><a href="#">这份全球旅行攻略请收好</a></h3>
-                    <a href="#">红糖白巧克力核桃包，8分钟早餐轻松做</a>
-                    <a href="#">真的别再炒丝了，土豆这么做才叫绝！</a>
-                    <a href="#">普宁惊现一名采花大爷，网友都惊呆了！</a>
+                    <a href="#">红糖白巧克力核桃包，8分钟早餐轻松做</a><br>
+                    <a href="#">真的别再炒丝了，土豆这么做才叫绝！</a><br>
+                    <a href="#">普宁惊现一名采花大爷，网友都惊呆了！</a><br>
                     <a href="#">公众号角逐时代，告诉你怎么才能出彩</a>
                 </div>
             </div>
-            <div class="item ad"></div>
             <div class="item form-three">
                 <h2><a href="#">粤优惠</a><span><a href="#">更多>></a></span></h2>
                 <div>
@@ -306,7 +305,7 @@
                 <div class="picture-text">
                     <img src="img/ninja149398631213539.png" alt="辣妈驾到">
                     <p><a href="#">辣妈驾到大众评审团招募 报名送礼</a></p>
-                    <p>母亲节辣妈亲子活动，参与就有礼品拿喔！</p>
+                    <p>辣妈亲子活动，参与就有礼品！</p>
                 </div>
                 <div class="picture-text">
                     <img src="img/143487217.jpg" alt="甜蜜约会照">
@@ -316,7 +315,7 @@
                 <div class="picture-text">
                     <img src="img/ninja149380199299361.jpg" alt="育儿心得">
                     <p><a href="#">一起来说说带娃那些事 说了有奖</a></p>
-                    <p>分享育儿心得，送给宝宝也送给自己！</p>
+                    <p>分享育儿心得，送给宝宝和自己！</p>
                 </div>
             </div>
             <div class="item ad"></div>

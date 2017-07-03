@@ -70,6 +70,7 @@ h1>a,h2>a,h3>a{
     padding:1rem;
     background: #ccc;
 }
+
 /* ============
     header
    ============
@@ -80,7 +81,6 @@ header .top{
 }
 header .top nav{
     width:75%;
-    min-width:1055px;
 }
 header .top nav ul:first-child{
     float:left;
@@ -144,7 +144,6 @@ header .main{
 }
 header .main nav{
     width:75%;
-    min-width:1055px;
 }
 header .main nav ul{
     display:inline-block;
@@ -153,12 +152,44 @@ header .main nav ul{
 header .main nav .search{
     float:right;
 }
+header .main nav .search input{
+    height:18px;
+    width:150px;
+    vertical-align: bottom;
+}
+header .main nav .search div{
+    display:inline-block;
+    vertical-align: bottom;
+    margin-left:-35px;
+    margin-bottom:-3.5px;
+}
+header .main nav .search span{
+    display:inline-block;
+    background-image:url(../img/soso-sprite-orange.jpg);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height:22.8px;
+}
+header .main nav .search a:first-child span{
+    height:22.8px;
+    width:28px;
+    background-position:0 0;
+}
+header .main nav .search a:last-child span{
+    height:24px;
+    width:50px;
+    background-position: 0 -36px;
+}
 /*header .bottom*/
-header .bottom nav{
+header .bottom{
     width:75%;
-    min-width:1055px;
-    padding:1.5rem;
+    min-width: 1010px;
+    margin-left: auto;
+    margin-right:auto;
     border-bottom: 1px solid #eaeaea;
+}
+header .bottom nav{
+    padding:1rem;
 }
 header .bottom nav ul{
     float:left;
@@ -176,8 +207,11 @@ header .bottom nav ul li{
    ============
  */
 .container{
+    box-sizing: border-box;
+    padding:0 0.3rem;
     width:75%;
-    min-width:1055px;
+    min-width:1010px;
+
 }
 
 /* ============
@@ -213,20 +247,19 @@ header .bottom nav ul li{
     border-left:#f67900 2px solid;
 }
 /* ============
-    .container .top
+    .container
    ============
  */
-.container .top{
-    font-size:0;
-}
-.container .top .day-news{
+
+.container .day-news{
     display:inline-block;
     box-sizing: border-box;
     padding-right:2rem;
     width:calc(66.7% + 1.33rem);
     vertical-align: bottom;
+    margin-bottom:2rem;
 }
-.container .top aside{
+.container aside{
     display:inline-block;
     box-sizing: border-box;
     width:calc(33.3% - 1.33rem);
@@ -234,39 +267,38 @@ header .bottom nav ul li{
     border:1px solid #dfdfdf;
     padding-top: 3rem;
     vertical-align: bottom;
+    font-size:1.5rem;
+    margin-bottom: 2rem;
 }
-.container .top .day-news h2{
+.container .day-news h2{
     padding-left:1rem;
     border-left:2px solid #f67900;
     font-size:2rem;
     font-weight:normal;
     border-bottom:1px solid #dfdfdf;
 }
-.container .top .day-news div{
+.container .day-news div{
     font-size:1.5rem;
     border-bottom:1px solid #dfdfdf;
 }
-.container .top .day-news div h3 a{
+.container .day-news div h3 a{
     font-size:2.5rem;
     font-weight:normal;
 }
-.container .top aside{
-    font-size:1.5rem;
-}
-.container .top aside>img{
+.container aside>img{
     padding-bottom:2rem;
 }
-.container .top aside .notice{
+.container aside .notice{
     text-align: center;
 }
-.container .top aside .notice img{
+.container aside .notice img{
     padding-left:3rem;
     margin-right:-3rem;
     margin-top:-1rem;
     display:block;
     float:left;
 }
-.container .top aside .notice .notice-text{
+.container aside .notice .notice-text{
     margin-top:2rem;
 }
 /* ============
@@ -286,7 +318,7 @@ header .bottom nav ul li{
     overflow: hidden;
     margin-bottom: 2rem;
 }
-.container .content .item:nth-child(3n-1){
+.container .content .item:nth-child(3n+1){
     margin-left:2rem;
     margin-right:2rem;
 }
@@ -365,7 +397,7 @@ header .bottom nav ul li{
    ============
  */
 footer{
-    min-width:1055px;
+    min-width: 1010px;
 }
 footer .link ul{
     display:block;
@@ -403,4 +435,114 @@ footer .icons .item a{
     width:calc(100% - 50px);
     height:3rem;
     overflow:hidden;
+}
+@media only screen and (min-width: 1010px){
+}
+@media only screen and (max-width: 1010px) and (min-width: 680px){
+    header .top{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+    header .main nav ul{
+        display:none;
+    }
+    header .bottom{
+        min-width: 680px;
+    }
+    header .bottom nav{
+        padding:0.4rem;
+    }
+    header .bottom nav ul{
+        padding-right:0.4rem;
+        padding-left:0.4rem;
+    }
+    header .bottom nav ul+ul{
+        border-left:none;
+    }
+    header .bottom nav ul li{
+        margin:0.4rem;
+    }
+    .container{
+        min-width: 680px;
+    }
+    .container .day-news{
+        display:block;
+        padding-right:0;
+        width:100%;
+    }
+    .container aside{
+        display:inline-block;
+        width:calc(50% - 2rem);
+        height:20rem;
+        margin-top:0;
+        margin-right:2rem;
+    }
+    .container .content .item{
+        width:calc(50% - 2rem);
+    }
+    .container .content .item:nth-child(3n+1){
+         margin-left:0rem;
+         margin-right:0rem;
+     }
+    .container .content .item:nth-child(2n-1){
+        margin-left:2rem;
+    }
+    .container .content .item:nth-child(2n){
+        margin-right:2rem;
+    }
+    .container .human .item{
+        font-size:1.2rem;
+        width:50%;
+    }
+
+
+}
+@media only screen and (max-width: 680px){
+    header .top{
+        display:none;
+    }
+    footer{
+        display:none;
+    }
+    header .main nav ul{
+        display:none;
+    }
+    header .bottom{
+        display: none;
+    }
+    .container{
+        min-width: 320px;
+    }
+    .container .day-news{
+        display:block;
+        padding-right:0;
+        width:100%;
+    }
+    .container aside{
+        display:block;
+        width:100%;
+    }
+    .container .content .item{
+        width:100%;
+        height:auto;
+    }
+    .container .content .item:nth-child(3n+1){
+        margin-left:0rem;
+        margin-right:0rem;
+    }
+    .container .content .item:nth-child(2n-1){
+        margin-left:0rem;
+    }
+    .container .content .item:nth-child(2n){
+        margin-right:0rem;
+    }
+    .container .human .item{
+        font-size:1.2rem;
+        width:50%;
+    }
+    header .main nav .search{
+        display:none;
+    }
 }
