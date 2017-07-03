@@ -15,6 +15,16 @@ function prepare() {
     var tabs=[];
     for(var i=0;i<2;i++) {
         options[i] = formTwos[i].getElementsByTagName('a');
+        options[i][0].onclick=function (){
+
+            return false;
+
+        }
+        options[i][1].onclick=function () {
+
+            return false;
+        }
+
         tabs[i] = formTwos[i].getElementsByClassName('tab');
         (function () {
             var p=i;

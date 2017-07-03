@@ -290,7 +290,7 @@ header .bottom nav ul li{
     font-weight:normal;
 }
 .container aside>img{
-    padding-bottom:2rem;
+    padding-bottom:1rem;
 }
 .container aside .notice{
     text-align: center;
@@ -303,7 +303,7 @@ header .bottom nav ul li{
     float:left;
 }
 .container aside .notice .notice-text{
-    margin-top:2rem;
+    margin-top:1rem;
 }
 /* ============
     .container .content
