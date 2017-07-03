@@ -233,12 +233,16 @@ header .bottom nav ul li{
     vertical-align: top;
 }
 .container .human .item p{
-    display:inline-block;
+    float:right;
     vertical-align: top;
     margin:0;
     width:calc(100% - 70px);
     height:4.5rem;
     overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }
 .container .human .item p span{
     padding:0rem 1rem;
@@ -339,13 +343,24 @@ header .bottom nav ul li{
 .container .content .item h3{
     padding-top:2rem;
     font-weight: normal;
-    line-height:1.5rem;
+    line-height:2rem;
     margin:0;
 }
+.container .content .form-one div:nth-child(3) p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height:3.3rem;
+}
 .container .content .form-one img{
+    display: inline-block;
     float: left;
     padding:2rem 1rem 1rem 0rem;
+    vertical-align: top;
 }
+
 .container .content .form-two h2{
     padding-left:0;
     border-left:none;
